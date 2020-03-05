@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    text-align:center;   
+}
+
+body {
+     background-color: blueviolet;
+    }
+
+    #title {
+        color: hotpink;
+        font-family: Luminari, fantasy;
+    }
+
+  #paragraph {
+    color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: violet;
+    font-size: 30px;   
+  }  
+
+  #crystal1 {
+      background-color: blueviolet;
+      border-style:none;
+  }
+
+  #crystal2 {
+    background-color: blueviolet;
+    border-style:none;
+  }
+
+  #crystal3 {
+    background-color: blueviolet;
+    border-style:none;
+  }
+
+  #crystal4 {
+    background-color: blueviolet;
+    border-style:none;
+  }
+
+  #computerNumber {
+    color: hotpink;
+    font-family: Luminari, fantasy;
+    font-size:30px;
+  }
+
+  #Wins {
+    color: hotpink;
+    font-family: Luminari, fantasy;
+    font-size:30px;
+  }
+
+  #Losses {
+    color: hotpink;
+    font-family: Luminari, fantasy;
+    font-size:30px;
+  }
+
+  #totalScore {
+    color: hotpink;
+    font-family: Luminari, fantasy;
+    font-size:30px;
+  }
