@@ -9,7 +9,8 @@ var crystal4;
 var magicGlitterSound;
 
 function addToScore (x) //this function receives the crystal number
-{
+{   document.getElementById("totalMessage").innerHTML = "";
+    document.getElementById("magic").pause();
     if (x == "1") {totalScore = totalScore + crystal1;}
     if (x == "2") {totalScore = totalScore + crystal2;}
     if (x == "3") {totalScore = totalScore + crystal3;}
@@ -19,15 +20,18 @@ function addToScore (x) //this function receives the crystal number
 
     if (totalScore == computerNumber) {
         wins++;
-        totalScore = 0; 
+        totalScore = 0;
         setRandom ();
+        document.getElementById("totalMessage").innerHTML = "You Win!";
+        document.getElementById("magic").play();
+      
     }
 
     if (totalScore > computerNumber) {
       losses++;
       totalScore = 0;
-      MagicGlitterSund = loadSound ("../images/Magic Glitter.wav");
       setRandom ();
+      document.getElementById("totalMessage").innerHTML = "You Lose!";
     }
 
     document.getElementById("Wins").innerHTML = "Wins: " + wins;

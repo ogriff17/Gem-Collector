@@ -4,62 +4,71 @@
 }
 
 body {
-     background-color: blueviolet;
+     background-image: url(../images/Magical-Background-For-you.jpg);
+    background-size: 2000px;
     }
 
     #title {
-        color: hotpink;
+        color: black;
         font-family: Luminari, fantasy;
+        outline-style: solid, 20px, black;  
     }
 
   #paragraph {
-    color: white;
+    color: black;
     box-sizing: border-box;
     border-style: solid;
-    border-color: violet;
-    font-size: 30px;   
+    border-color:black;
+    font-size: 30px;
+    background-color: darkorange;   
   }  
 
   #crystal1 {
-      background-color: blueviolet;
+      background-color: transparent;
       border-style:none;
   }
 
   #crystal2 {
-    background-color: blueviolet;
+    background-color:transparent;
     border-style:none;
   }
 
   #crystal3 {
-    background-color: blueviolet;
+    background-color: transparent;
     border-style:none;
   }
 
   #crystal4 {
-    background-color: blueviolet;
+    background-color: transparent;
     border-style:none;
   }
 
   #computerNumber {
-    color: hotpink;
+    color: darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
   }
 
   #Wins {
-    color: hotpink;
+    color: darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
   }
 
   #Losses {
-    color: hotpink;
+    color:darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
   }
 
   #totalScore {
-    color: hotpink;
+    color: darkorange;
+    font-family: Luminari, fantasy;
+    font-size:30px;
+  }
+
+  #totalMessage {
+    color: red;
     font-family: Luminari, fantasy;
     font-size:30px;
   }
