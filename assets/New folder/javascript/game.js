@@ -24,7 +24,7 @@ function addToScore (x) //this function receives the crystal number
         setRandom ();
         document.getElementById("totalMessage").innerHTML = "You Win!";
         document.getElementById("magic").play();
-      
+        setTimeout(function(){document.getElementById("magic").pause();},6000); 
     }
 
     if (totalScore > computerNumber) {
