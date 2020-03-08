@@ -9,7 +9,7 @@ var crystal4;
 var magicGlitterSound;
 
 function addToScore (x) //this function receives the crystal number
-{   document.getElementById("totalMessage").innerHTML = "";
+{   $('#totalMessage').text("");
     document.getElementById("magic").pause();
     if (x == "1") {totalScore = totalScore + crystal1;}
     if (x == "2") {totalScore = totalScore + crystal2;}
@@ -22,7 +22,7 @@ function addToScore (x) //this function receives the crystal number
         wins++;
         totalScore = 0;
         setRandom ();
-        document.getElementById("totalMessage").innerHTML = "You Win!";
+        $('#totalMessage').text("You Win!!!");
         document.getElementById("magic").play();
         setTimeout(function(){document.getElementById("magic").pause();},6000); 
     }
@@ -31,14 +31,13 @@ function addToScore (x) //this function receives the crystal number
       losses++;
       totalScore = 0;
       setRandom ();
-      document.getElementById("totalMessage").innerHTML = "You Lose!";
+      $('#totalMessage').text("You Lose!!!");
     }
-
-    document.getElementById("Wins").innerHTML = "Wins: " + wins;
-    document.getElementById("Losses").innerHTML = "Losses: " + losses;
-    document.getElementById("computerNumber").innerHTML = "" + computerNumber;
-    document.getElementById("totalScore").innerHTML = "Total Score: " + totalScore;
-
+    $('#Wins').text("Wins: " + wins);
+    $('#Losses').text("Losses: " + losses);
+    $('#computerNumber').text(" " + computerNumber);
+    $('#totalScore').text("Total Score: " + totalScore);
+  
 }
 function setRandom()
 {
@@ -56,7 +55,8 @@ setRandom (); //store the function and run it
 
 //These statements are only executed when the page loads the first time
 
-document.getElementById("Wins").innerHTML = "Wins: " + wins;
-document.getElementById("Losses").innerHTML = "Losses: " + losses;
-document.getElementById("totalScore").innerHTML = "Total Score: " + totalScore;
-document.getElementById("computerNumber").innerHTML = "" + computerNumber;
+$('#Wins').text("Wins: " + wins);
+$('#Losses').text("Losses: " + losses);
+$('#computerNumber').text(" " + computerNumber);
+$('#totalScore').text("Total Score: " + totalScore);
+  
