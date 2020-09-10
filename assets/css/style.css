@@ -53,18 +53,24 @@ body {
     color: darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
   }
 
   #Losses {
     color:darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
   }
 
   #totalScore {
     color: darkorange;
     font-family: Luminari, fantasy;
     font-size:30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
   }
 
   #totalMessage {
